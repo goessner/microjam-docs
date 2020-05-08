@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="theme-light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="description" content="Usage">
+
+<meta name="keywords" content="">
+<title>Usage</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/styles/vs2015.min.css">
+
+<link rel="stylesheet" href="./theme/styles.css">
+</head>
+<body id="top">
+<header>
+  <a class="left" href="./introduction.html"><img src="./img/icon64.png"></a>
+  <h1 class="right">Documentation</h1>
+</header>
+<main>
+  <nav>
+     <h2 style="margin: 0.5em"><a href="#top">Documentation</a></h2>
+     <ul>
+<li>
+<p><a href="introduction.html#introduction" data-href="introduction.html#introduction">Introduction</a></p>
+<ul>
+<li><a href="introduction.html#what-is-it" data-href="introduction.html#what-is-it">What is it ?</a></li>
+<li><a href="introduction.html#where-is-it-from" data-href="introduction.html#where-is-it-from">Where is it from ?</a></li>
+<li><a href="introduction.html#who-can-use-it" data-href="introduction.html#who-can-use-it">Who can use it ?</a></li>
+</ul>
+</li>
+<li>
+<p><a href="installation.html#usage" data-href="installation.html#usage">Usage</a></p>
+<ul>
+<li><a href="installation.html#create-pages" data-href="installation.html#create-pages">Create Pages</a></li>
+<li><a href="installation.html#create-navigation-sidebar" data-href="installation.html#create-navigation-sidebar">Create Navigation Sidebar</a></li>
+<li><a href="installation.html#modify-header" data-href="installation.html#modify-header">Modify Header</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav>
+  <article>
+<h1 id="usage">Usage <a href="#usage">#</a></h1>
+<h2 id="create-pages">Create Pages <a href="#create-pages">#</a></h2>
+<p>Create arbitrary pages with following metadata:</p>
+<pre><code><code><div>---
+&quot;layout&quot;: &quot;page&quot;,
+&quot;title&quot;: &quot;Usage&quot;,
+&quot;use&quot;: [ { &quot;uri&quot;: &quot;navigation.md&quot; } ],
+&quot;permalink&quot;: true
+---
+</div></code></code></pre>
+<p>Here the entries <code>layout</code> and <code>use</code> are important. Then create your content while structuring it by meaningful headings. It is recommended to not use headings more than three levels deep.</p>
+<p>Create some or all pages this way.</p>
+<h2 id="create-navigation-sidebar">Create Navigation Sidebar <a href="#create-navigation-sidebar">#</a></h2>
+<p>Create a markdown file named according your pages entry.</p>
+<pre><code><code><div>&quot;use&quot;: [ { &quot;uri&quot;: &quot;navigation.md&quot; } ],
+</div></code></code></pre>
+<p>so we create file <code>navigation.md</code>.</p>
+<p>In every page file, you previously created, generate a <em>table of content</em> snippet via <kbd>Ctrl</kbd> + <kbd>K</kbd>  <kbd>T</kbd> (see <a href="file:///C:/git/microjam/docs/usage.html#keyboard-commands" data-href="file:///C:/git/microjam/docs/usage.html#keyboard-commands">microjam.keybord commands</a>).</p>
+<p>Here you would get</p>
+<pre><code><code><div>- [Usage](installation.html#usage)
+  - [Create Pages](installation.html#create-pages)
+  - [Create Navigation Sidebar](installation.html#create-navigation-sidebar)
+  - [Modify Header](installation.html#modify-header)
+</div></code></code></pre>
+<p>Now edit this markdown list snippet as you like and then copy and paste it into the file <code>navigation.md</code> .</p>
+<h2 id="modify-header">Modify Header <a href="#modify-header">#</a></h2>
+<p>You can modify the pages header as well as the first sidebar entry manually directly inside of <code>docs/theme/template.js</code>.</p>
+
+  </article>
+</main>
+<footer>
+  <span class="left">&copy; Documentation</span>
+  <span class="center">powered by &mu;Jam &amp; VSCode &mdash; hosted by GitHub</span>
+  <span class="right" onclick="document.documentElement.className = document.documentElement.className === 'theme-dark' ? 'theme-light' : 'theme-dark';">&#9788;</span>
+</footer>
+</body>
+</html>

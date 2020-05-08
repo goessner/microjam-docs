@@ -1,0 +1,7 @@
+{
+  "name": "docs",
+  "description": "A documentation theme for microjam with sidebar",
+  "version": "0.2.0",
+  "author": "sg",
+  "microjam": {}
+}
