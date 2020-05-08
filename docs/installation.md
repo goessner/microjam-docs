@@ -29,7 +29,7 @@ Create a markdown file named according your pages entry.
 ```
 "use": [ { "uri": "navigation.md" } ],
 ```
-so we create file `navigation.md`.
+So we are creating file `navigation.md`.
 
 In every page file, you previously created, generate a *table of content* snippet via <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>K</kbd>&nbsp;&nbsp;<kbd>T</kbd> (see [microjam.keybord commands](file:///C:/git/microjam/docs/usage.html#keyboard-commands)).
 
