@@ -1,5 +1,5 @@
 const tmpl = module.exports = {
-// article layout ... used by other templates
+// article layout ... used by other templates 
 page(data) {
   return `<!doctype html>
 <html class="theme-light">

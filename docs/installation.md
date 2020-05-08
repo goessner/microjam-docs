@@ -33,7 +33,7 @@ so we create file `navigation.md`.
 
 In every page file, you previously created, generate a *table of content* snippet via <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>K</kbd>&nbsp;&nbsp;<kbd>T</kbd> (see [microjam.keybord commands](file:///C:/git/microjam/docs/usage.html#keyboard-commands)).
 
-Here you would get 
+With this markdown file you would get 
 
 ```
 - [Usage](installation.html#usage)
