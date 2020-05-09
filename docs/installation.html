@@ -40,8 +40,8 @@
 
   </nav>
   <article>
-<h1 id="usage">Usage <a href="#usage">#</a></h1>
-<h2 id="create-pages">Create Pages <a href="#create-pages">#</a></h2>
+<h1 id="usage">Usage <a class="plnk" href="#usage">#</a></h1>
+<h2 id="create-pages">Create Pages <a class="plnk" href="#create-pages">#</a></h2>
 <p>Create arbitrary pages with following metadata:</p>
 <pre><code><code><div>---
 &quot;layout&quot;: &quot;page&quot;,
@@ -52,7 +52,7 @@
 </div></code></code></pre>
 <p>Here the entries <code>layout</code> and <code>use</code> are important. Then create your content while structuring it by meaningful headings. It is recommended to not use headings more than three levels deep.</p>
 <p>Create some or all pages this way.</p>
-<h2 id="create-navigation-sidebar">Create Navigation Sidebar <a href="#create-navigation-sidebar">#</a></h2>
+<h2 id="create-navigation-sidebar">Create Navigation Sidebar <a class="plnk" href="#create-navigation-sidebar">#</a></h2>
 <p>Create a markdown file named according your pages entry.</p>
 <pre><code><code><div>&quot;use&quot;: [ { &quot;uri&quot;: &quot;navigation.md&quot; } ],
 </div></code></code></pre>
@@ -65,15 +65,19 @@
   - [Modify Header](installation.html#modify-header)
 </div></code></code></pre>
 <p>Now edit this markdown list snippet as you like and then copy and paste it into the file <code>navigation.md</code> .</p>
-<h2 id="modify-header">Modify Header <a href="#modify-header">#</a></h2>
+<h2 id="modify-header">Modify Header <a class="plnk" href="#modify-header">#</a></h2>
 <p>You can modify the pages header as well as the first sidebar entry manually directly inside of <code>docs/theme/template.js</code>.</p>
 
   </article>
 </main>
 <footer>
   <span class="left">&copy; Documentation</span>
-  <span class="center">powered by &mu;Jam &amp; VSCode &mdash; hosted by GitHub</span>
-  <span class="right" onclick="document.documentElement.className = document.documentElement.className === 'theme-dark' ? 'theme-light' : 'theme-dark';">&#9788;</span>
+  <span class="center">powered by &mu;Jam &amp; <a href="https://code.visualstudio.com/">VSCode</a> &mdash; hosted by <a href="https://github.com/">GitHub</a></span>
+  <span class="right"
+        title="toggle light/dark theme"
+        onclick="document.documentElement.className = document.documentElement.className === 'theme-dark' ? 'theme-light' : 'theme-dark';">
+    &#9788;
+  </span>
 </footer>
 </body>
 </html>

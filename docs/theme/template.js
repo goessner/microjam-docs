@@ -31,8 +31,12 @@ ${data.content}
 </main>
 <footer>
   <span class="left">&copy; Documentation</span>
-  <span class="center">powered by &mu;Jam &amp; VSCode &mdash; hosted by GitHub</span>
-  <span class="right" onclick="document.documentElement.className = document.documentElement.className === 'theme-dark' ? 'theme-light' : 'theme-dark';">&#9788;</span>
+  <span class="center">powered by &mu;Jam &amp; <a href="https://code.visualstudio.com/">VSCode</a> &mdash; hosted by <a href="https://github.com/">GitHub</a></span>
+  <span class="right"
+        title="toggle light/dark theme"
+        onclick="document.documentElement.className = document.documentElement.className === 'theme-dark' ? 'theme-light' : 'theme-dark';">
+    &#9788;
+  </span>
 </footer>
 </body>
 </html>`
