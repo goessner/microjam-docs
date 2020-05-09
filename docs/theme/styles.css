@@ -5,8 +5,8 @@
 :root {
     --color-footer: #e2f3f3;
     --bgcol-footer: #1f3939;
-    --color-code: #eee;
-    --bgcol-code: #222;
+    --color-code: #e2f3f3;
+    --bgcol-code: #1f3939;
     --color-shade: #666;
     --sidebar-width: 14rem;
 }
@@ -71,6 +71,13 @@ header > .right {
   font-size: 2.5rem;
   font-weight: 200;
 }
+header > a:link, header > a:visited {
+  color: var(--color-header);
+  text-decoration: none;
+}
+header > a:hover {
+  color: var(--color-hover);
+}
 footer > .left {
   grid-column: 1;
   text-align: left;
@@ -83,18 +90,12 @@ footer > .right {
   grid-column: 3;
   text-align: right;
 }
-footer > .right:hover {
-  cursor: pointer;
-  color: var(--color-hover);
-}
-footer > a {
+footer a {
   color: var(--color-footer);
-}
-header > a:link, header > a:visited {
-  color: var(--color-header);
   text-decoration: none;
 }
-header > a:hover {
+footer a:hover, footer > .right:hover {
+  cursor: pointer;
   color: var(--color-hover);
 }
 main {

@@ -25,7 +25,7 @@ Create some or all pages this way.
 
 ## Create Navigation Sidebar
 
-Create a markdown file named according your pages entry.
+Create a markdown file named according your pages `use` metadata entry.
 ```
 "use": [ { "uri": "navigation.md" } ],
 ```
